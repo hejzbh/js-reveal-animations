@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sections-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  justify-content: center;
+  align-items: center;
+  padding: 20vh 0;
+  overflow: hidden;
+  padding-bottom: 60vh;
+}
+
+.section {
+  padding: 20em 2em;
+  min-height: 60vh;
+  background: red;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease-in-out all;
+  justify-content: center;
+  border-radius: 28px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.section .title {
+  font-size: 35px;
+  color: white;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.section-2 {
+  background: green;
+}
+
+.section-3 {
+  background: blueviolet;
+}
+
+.section-4 {
+  background: blue;
+}
+
+.section-5 {
+  background: purple;
+}
+
+/* Animation classes */
+.fade-in {
+  opacity: 0;
+}
+
+.fade-down {
+  opacity: 0;
+  transform: translateY(10%);
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(-10%);
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(-10%);
+}
+
+.fade-left {
+  opacity: 0;
+  transform: translateX(10%);
+}
