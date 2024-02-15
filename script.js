@@ -29,11 +29,7 @@ function revealSection(entries, observer) {
   if (entry.isIntersecting) {
     section.classList.remove(animation);
   } else {
-    if (playOnce) {
-      observer.unobserve(section);
-    } else {
-      section.classList.add(animation);
-    }
+    playOnce ? observer.unobserve(section) : section.classList.add(animation);
   }
 }
 
